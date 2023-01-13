@@ -5,7 +5,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 const PrivateRoute = ({children, ...rest}) => {
   const {isAuthenticate, user} = useAuth0()
   const isUser = isAuthenticate && user
-  console.log("Private route")
+
   return (
     <Route 
       {...rest} 
